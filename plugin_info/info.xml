@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>wattlet</id>
+    <name>Wattlet</name>
+    <licence>AGPL</licence>
+    <author>Thomas Martinez</author>
+    <installation></installation>
+    <require>2.0</require>
+    <category>automation protocol</category>
+</info>
