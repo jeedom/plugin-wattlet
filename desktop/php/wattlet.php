@@ -50,8 +50,8 @@ sendVarToJS('eqType', 'wattlet');
                 foreach ($eqLogics as $eqLogic) {
                     echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
                     echo "<center>";
-					if (file_exists('plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.jpg')) {
-						echo '<img src="plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.jpg" height="105" width="95" />';
+					if (file_exists('plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.png')) {
+						echo '<img src="plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.png" height="105" width="95" />';
 					}else{
 						echo '<img src="plugins/wattlet/doc/images/wattlet_icon.png" height="105" width="95" />';	
 					}

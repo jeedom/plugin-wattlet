@@ -16,7 +16,7 @@
  */
 
 $('.eqLogicAttr[data-l1key=configuration][data-l2key=type]').on('change',function(){
-    $('#img_Model').attr('src','plugins/wattlet/doc/images/'+$(this).value()+'.jpg');
+    $('#img_Model').attr('src','plugins/wattlet/doc/images/'+$(this).value()+'.png');
 });
 
 $('#bt_syncEqLogic').on('click', function () {
