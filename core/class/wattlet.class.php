@@ -199,6 +199,27 @@ class wattlet extends eqLogic {
 			        $wattletCmd->setSubType('binary');
 					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			        $wattletCmd->save();
+					$stateId1 = $wattletCmd->getId();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('On Entrée', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '01');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+					$wattletCmd->setValue($stateId1);
+			        $wattletCmd->save();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('Off Entrée', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '00');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+					$wattletCmd->setValue($stateId1);
+			        $wattletCmd->save();
 					
 					$wattletCmd = new wattletCmd();
 			        $wattletCmd->setName(__('Etat Sortie', __FILE__));
@@ -215,7 +236,7 @@ class wattlet extends eqLogic {
 					$wattletCmd = new wattletCmd();
 			        $wattletCmd->setName(__('On', __FILE__));
 			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
+			        $wattletCmd->setConfiguration('request', '03');
 			        $wattletCmd->setType('action');
 			        $wattletCmd->setSubType('other');
 					$wattletCmd->setTemplate('dashboard','light');
@@ -227,7 +248,7 @@ class wattlet extends eqLogic {
 					$wattletCmd = new wattletCmd();
 			        $wattletCmd->setName(__('Off', __FILE__));
 			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
+			        $wattletCmd->setConfiguration('request', '02');
 			        $wattletCmd->setType('action');
 			        $wattletCmd->setSubType('other');
 					$wattletCmd->setTemplate('dashboard','light');
@@ -246,6 +267,27 @@ class wattlet extends eqLogic {
 			        $wattletCmd->setSubType('binary');
 					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			        $wattletCmd->save();
+					$stateId = $wattletCmd->getId();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('On', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '01');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+					$wattletCmd->setValue($stateId);
+			        $wattletCmd->save();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('Off', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '00');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+					$wattletCmd->setValue($stateId);
+			        $wattletCmd->save();
 					
 				}elseif($wattcube['type']=="PUSH-2"){
 					$wattletCmd = new wattletCmd();
@@ -257,6 +299,27 @@ class wattlet extends eqLogic {
 			        $wattletCmd->setSubType('binary');
 					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			        $wattletCmd->save();
+					$stateId1 = $wattletCmd->getId();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('On 1', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '01');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+					$wattletCmd->setValue($stateId1);
+			        $wattletCmd->save();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('Off 1', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '00');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+					$wattletCmd->setValue($stateId1);
+			        $wattletCmd->save();
 					
 					$wattletCmd = new wattletCmd();
 			        $wattletCmd->setName(__('Etat 2', __FILE__));
@@ -266,6 +329,27 @@ class wattlet extends eqLogic {
 			        $wattletCmd->setType('info');
 			        $wattletCmd->setSubType('binary');
 					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			        $wattletCmd->save();
+					$stateId2 = $wattletCmd->getId();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('On 2', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '03');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+					$wattletCmd->setValue($stateId2);
+			        $wattletCmd->save();
+					
+					$wattletCmd = new wattletCmd();
+			        $wattletCmd->setName(__('Off 2', __FILE__));
+			        $wattletCmd->setEqLogic_id($include_device);
+			        $wattletCmd->setConfiguration('request', '02');
+			        $wattletCmd->setType('action');
+			        $wattletCmd->setSubType('other');
+					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+					$wattletCmd->setValue($stateId2);
 			        $wattletCmd->save();
 					
 				}elseif($wattcube['type']=="WIN"){
@@ -336,14 +420,7 @@ class wattletCmd extends cmd {
 		$wattlet=$this->getEqLogic();
 		$bridgeIp = config::byKey('bridge_ip', 'wattlet');
 		if ($this->type == 'action') {
-			if($wattlet->getConfiguration('TYPE') == "POWER"){
-				$state_io1 = cmd::byEqLogicIdAndLogicalId($wattlet->getId(), 'state_io1');
-				if($state_io1->getCmd() == 0 && $this->getConfiguration('request') == '01'){
-					$request = "02";
-				}else{
-					$request = "03";
-				}
-			}elseif($wattlet->getConfiguration('TYPE') == "LIGHT-2"){
+			if($wattlet->getConfiguration('TYPE') == "LIGHT-2" || $wattlet->getConfiguration('TYPE') == "POWER" || $wattlet->getConfiguration('TYPE') == "PUSH-2"){
 				if($this->getConfiguration('request') == "00" || $this->getConfiguration('request') == "01"){
 					$state_io = cmd::byEqLogicIdAndLogicalId($wattlet->getId(), 'state_io2');
 					if($state_io->getCmd() == 0){
