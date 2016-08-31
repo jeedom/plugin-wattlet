@@ -396,7 +396,18 @@ class wattlet extends eqLogic {
 					
 				}				
 			}
-		}		        
+		}
+		$eqLogics = eqLogic::byType('wattlet');
+		if(count($eqLogics) > 0){
+			foreach($eqLogics as $eqLogic) {
+				$key = array_search($eqLogic->getLogicalId(), array_column($wattcubes, 'address'));
+				if (!is_numeric($key)){
+					$eqLogic->remove();
+					log::add('wattlet','info',' Suppression de l\'équipement ayant l\'adresse : ' . $eqLogic->getLogicalId());
+				}
+				
+			}
+		}	        
     }
 }
 
