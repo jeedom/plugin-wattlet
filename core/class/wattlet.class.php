@@ -94,7 +94,7 @@ class wattlet extends eqLogic {
     }
 	
 	public function postSave() {
-		sleep(0.2);
+		sleep(1);
 		$type = $this->getConfiguration('type');		
 		if($type =="LIGHT" || $type =="OPEN"){
 			$wattletCmd = $this->getCmd(null, 'state');
