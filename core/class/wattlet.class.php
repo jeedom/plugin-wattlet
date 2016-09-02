@@ -94,6 +94,7 @@ class wattlet extends eqLogic {
     }
 	
 	public function postSave() {
+		sleep(0.2);
 		$type = $this->getConfiguration('type');		
 		if($type =="LIGHT" || $type =="OPEN"){
 			$wattletCmd = $this->getCmd(null, 'state');
@@ -485,6 +486,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setLogicalId('state');
 			$wattletCmd->setConfiguration('request', 'state');
 			$wattletCmd->setType('info');
+			$wattletCmd->setOrder(1);
 			$wattletCmd->setSubType('binary');
 			$wattletCmd->setTemplate('dashboard','store');
 			$wattletCmd->setTemplate('mobile','store');
@@ -502,6 +504,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('minValue', 0);
 			$wattletCmd->setConfiguration('maxValue', 8);
 			$wattletCmd->setType('action');
+			$wattletCmd->setOrder(2);
 			$wattletCmd->setSubType('slider');
 			$wattletCmd->setDisplay('generic_type','FLAP_SLIDER');
 			$wattletCmd->save();
@@ -515,9 +518,10 @@ class wattlet extends eqLogic {
 			$wattletCmd->setLogicalId('up');
 			$wattletCmd->setConfiguration('request', '08');
 			$wattletCmd->setType('action');
+			$wattletCmd->setOrder(3);
 			$wattletCmd->setSubType('other');
 			$wattletCmd->setDisplay('generic_type','FLAP_UP');
-			$wattletCmd->setDisplay('icon','<i class=\"fa fa-arrow-up\"></i>');
+			$wattletCmd->setDisplay('icon','<i class="fa fa-arrow-up"></i>');
 			$wattletCmd->save();
 			
 			$wattletCmd = $this->getCmd(null, 'down');
@@ -529,9 +533,10 @@ class wattlet extends eqLogic {
 			$wattletCmd->setLogicalId('down');
 			$wattletCmd->setConfiguration('request', '00');
 			$wattletCmd->setType('action');
+			$wattletCmd->setOrder(4);
 			$wattletCmd->setSubType('other');
 			$wattletCmd->setDisplay('generic_type','FLAP_DOWN');
-			$wattletCmd->setDisplay('icon','<i class=\"fa fa-arrow-down\"></i>');
+			$wattletCmd->setDisplay('icon','<i class="fa fa-arrow-down"></i>');
 			$wattletCmd->save();
 					
 		}
