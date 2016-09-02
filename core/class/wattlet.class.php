@@ -253,7 +253,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->save();
 			$stateId1 = $wattletCmd->getId();
 			
-			wattletCmd = $this->getCmd(null, 'on1');
+			$wattletCmd = $this->getCmd(null, 'on1');
 			if (!is_object($wattletCmd)) {
 				$wattletCmd = new wattletCmd();
 				$wattletCmd->setName(__('On Entrée', __FILE__));
@@ -300,7 +300,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->save();
 			$stateId2 = $wattletCmd->getId();
 			
-			wattletCmd = $this->getCmd(null, 'on2');
+			$wattletCmd = $this->getCmd(null, 'on2');
 			if (!is_object($wattletCmd)) {
 				$wattletCmd = new wattletCmd();
 				$wattletCmd->setName(__('On Sortie', __FILE__));
