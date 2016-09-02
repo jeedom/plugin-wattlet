@@ -323,7 +323,7 @@ class wattlet extends eqLogic {
 				$wattletCmd->setName(__('Off Sortie', __FILE__));
 			}
 			$wattletCmd->setEqLogic_id($this->getId());
-			$wattletCmd->setLogicalId('off1');
+			$wattletCmd->setLogicalId('off2');
 			$wattletCmd->setConfiguration('request', '04');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
