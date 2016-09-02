@@ -41,7 +41,7 @@ $eqLogics = wattlet::byType('wattlet');
 foreach ($eqLogics as $eqLogic) {
 	$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
 	if (file_exists('plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.png')) {
-		$img = '<img src="plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.png" height="105" width="95" />';
+		$img = '<img src="plugins/wattlet/doc/images/' . $eqLogic->getConfiguration('type') . '.png" height="65" width="55" />';
 	}else{
 		$img = '<img src="plugins/wattlet/doc/images/wattlet_icon.png" height="105" width="95" />';	
 	}
@@ -52,10 +52,10 @@ foreach ($eqLogics as $eqLogic) {
 		$status = '<span class="label label-danger" style="font-size : 1em;cursor:default;">{{NOK}}</span>';
 	}
 	echo '<td>' . $status . '</td>';
-	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('address') . '</span></td>';
-	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('type') . '</span></td>';
-	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('soft') . '</span></td>';
-	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('hard') . '</span></td>';
+	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('address') . '</span></td>';
+	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('type') . '</span></td>';
+	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('soft') . '</span></td>';
+	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('hard') . '</span></td>';
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('lastCommunication') . '</span></td>';
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('createtime') . '</span></td></tr>';
 }
