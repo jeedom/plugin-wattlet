@@ -23,6 +23,11 @@ $('#bt_syncEqLogic').on('click', function () {
     searchwattletDevices();
 });
 
+ $('#bt_healthwattlet').on('click', function () {
+    $('#md_modal').dialog({title: "{{Santé Wattlet}}"});
+    $('#md_modal').load('index.php?v=d&plugin=wattlet&modal=health').dialog('open');
+});
+
 function searchwattletDevices() {
     $.ajax({// fonction permettant de faire de l'ajax
         type: "POST", // methode de transmission des données au fichier php
