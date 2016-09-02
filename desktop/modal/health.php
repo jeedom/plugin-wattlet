@@ -32,7 +32,6 @@ $eqLogics = wattlet::byType('wattlet');
 			<th>{{Type}}</th>
 			<th>{{Version logicielle}}</th>
 			<th>{{Version matérielle}}</th>
-			<th>{{Dernière communication}}</th>
 			<th>{{Date création}}</th>
 		</tr>
 	</thead>
@@ -56,7 +55,6 @@ foreach ($eqLogics as $eqLogic) {
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('type') . '</span></td>';
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('soft') . '</span></td>';
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('hard') . '</span></td>';
-	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getStatus('lastCommunication') . '</span></td>';
 	echo '<td><span class="label label-info" style="font-size : 1em;cursor:default;">' . $eqLogic->getConfiguration('createtime') . '</span></td></tr>';
 }
 ?>
