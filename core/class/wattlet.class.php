@@ -77,324 +77,7 @@ class wattlet extends eqLogic {
 				$eqLogic->setIsVisible(1);
 	            $eqLogic->save();
 	            $eqLogic = self::byId($eqLogic->getId());
-	            $include_device = $eqLogic->getId();
-				
-				if($wattcube['type']=="LIGHT" || $wattcube['type']=="OPEN"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state');
-			        $wattletCmd->setConfiguration('request', 'state');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setIsVisible(false);
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-				}elseif($wattcube['type']=="LIGHT-2"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io1');
-			        $wattletCmd->setConfiguration('request', 'state_io1');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setIsVisible(false);
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId1 = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io2');
-			        $wattletCmd->setConfiguration('request', 'state_io2');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-					$wattletCmd->setIsVisible(false);
-			        $wattletCmd->save();
-					$stateId2 = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '03');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId2);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '02');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId2);
-			        $wattletCmd->save();
-					
-				}elseif($wattcube['type']=="POWER"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat Entrée', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io1');
-			        $wattletCmd->setConfiguration('request', 'state_io1');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId1 = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On Entrée', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off Entrée', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat Sortie', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io2');
-			        $wattletCmd->setConfiguration('request', 'state_io2');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-			        $wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-					$wattletCmd->setIsVisible(false);
-			        $wattletCmd->save();
-					$stateId = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '03');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '02');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setTemplate('dashboard','light');
-					$wattletCmd->setTemplate('mobile','light');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-				}elseif($wattcube['type']=="PUSH" || $wattcube['type']=="PUSH-L"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state');
-			        $wattletCmd->setConfiguration('request', 'state');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId);
-			        $wattletCmd->save();
-					
-				}elseif($wattcube['type']=="PUSH-2"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io1');
-			        $wattletCmd->setConfiguration('request', 'state_io1');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId1 = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '01');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off 1', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId1);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state_io2');
-			        $wattletCmd->setConfiguration('request', 'state_io2');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
-			        $wattletCmd->save();
-					$stateId2 = $wattletCmd->getId();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('On 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '03');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_ON');
-					$wattletCmd->setValue($stateId2);
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Off 2', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '02');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
-					$wattletCmd->setValue($stateId2);
-			        $wattletCmd->save();
-					
-				}elseif($wattcube['type']=="WIN"){
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Etat', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-					$wattletCmd->setLogicalId('state');
-			        $wattletCmd->setConfiguration('request', 'state');
-			        $wattletCmd->setType('info');
-			        $wattletCmd->setSubType('binary');
-					$wattletCmd->setTemplate('dashboard','store');
-					$wattletCmd->setTemplate('mobile','store');
-					$wattletCmd->setDisplay('generic_type','FLAP_STATE');
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Monter', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '08');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','FLAP_UP');
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Descendre', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', '00');
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('other');
-					$wattletCmd->setDisplay('generic_type','FLAP_DOWN');
-			        $wattletCmd->save();
-					
-					$wattletCmd = new wattletCmd();
-			        $wattletCmd->setName(__('Curseur', __FILE__));
-			        $wattletCmd->setEqLogic_id($include_device);
-			        $wattletCmd->setConfiguration('request', 'slider');
-					$wattletCmd->setConfiguration('minValue', 0);
-					$wattletCmd->setConfiguration('maxValue', 8);
-			        $wattletCmd->setType('action');
-			        $wattletCmd->setSubType('slider');
-					$wattletCmd->setDisplay('generic_type','FLAP_SLIDER');
-			        $wattletCmd->save();
-					
-				}				
+	            $include_device = $eqLogic->getId();				
 			}
 		}
 		$eqLogics = eqLogic::byType('wattlet');
@@ -409,6 +92,450 @@ class wattlet extends eqLogic {
 			}
 		}	        
     }
+	
+	public function postSave() {
+		$type = $this->setConfiguration('type');		
+		if($type =="LIGHT" || $type =="OPEN"){
+			$wattletCmd = $this->getCmd(null, 'state');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state');
+			$wattletCmd->setConfiguration('request', 'state');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+		}elseif($type=="LIGHT-2"){
+			$wattletCmd = $this->getCmd(null, 'state_io1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io1');
+			$wattletCmd->setConfiguration('request', 'state_io1');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId1 = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on1');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off1');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'state_io2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io2');
+			$wattletCmd->setConfiguration('request', 'state_io2');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId2 = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on2');
+			$wattletCmd->setConfiguration('request', '03');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off2');
+			$wattletCmd->setConfiguration('request', '02');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+					
+		}elseif($type=="POWER"){
+			$wattletCmd = $this->getCmd(null, 'state_io1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat Entrée', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io1');
+			$wattletCmd->setConfiguration('request', 'state_io1');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId1 = $wattletCmd->getId();
+			
+			wattletCmd = $this->getCmd(null, 'on1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On Entrée', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on1');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off Entrée', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off1');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+					
+			$wattletCmd = $this->getCmd(null, 'state_io2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat Sortie', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io2');
+			$wattletCmd->setConfiguration('request', 'state_io2');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId2 = $wattletCmd->getId();
+			
+			wattletCmd = $this->getCmd(null, 'on2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On Sortie', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on2');
+			$wattletCmd->setConfiguration('request', '03');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off Sortie', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off1');
+			$wattletCmd->setConfiguration('request', '04');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+					
+		}elseif($type=="PUSH" || $type=="PUSH-L"){
+			$wattletCmd = $this->getCmd(null, 'state');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state');
+			$wattletCmd->setConfiguration('request', 'state');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+					
+		}elseif($type=="PUSH-2"){
+			$wattletCmd = $this->getCmd(null, 'state_io1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io1');
+			$wattletCmd->setConfiguration('request', 'state_io1');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId1 = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on1');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off1');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off 1', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off1');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId1);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'state_io2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state_io2');
+			$wattletCmd->setConfiguration('request', 'state_io2');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId2 = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on2');
+			$wattletCmd->setConfiguration('request', '03');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off2');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off 2', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off2');
+			$wattletCmd->setConfiguration('request', '02');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId2);
+			$wattletCmd->save();
+					
+		}elseif($type=="WIN"){
+			$wattletCmd = $this->getCmd(null, 'state');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state');
+			$wattletCmd->setConfiguration('request', 'state');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setTemplate('dashboard','store');
+			$wattletCmd->setTemplate('mobile','store');
+			$wattletCmd->setDisplay('generic_type','FLAP_STATE');
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'slider');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Curseur', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('slider');
+			$wattletCmd->setConfiguration('request', 'slider');
+			$wattletCmd->setConfiguration('minValue', 0);
+			$wattletCmd->setConfiguration('maxValue', 8);
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('slider');
+			$wattletCmd->setDisplay('generic_type','FLAP_SLIDER');
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'up');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Monter', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('up');
+			$wattletCmd->setConfiguration('request', '08');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setDisplay('generic_type','FLAP_UP');
+			$wattletCmd->setDisplay('icon','<i class=\"fa fa-arrow-up\"></i>');
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'down');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Descendre', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('down');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setDisplay('generic_type','FLAP_DOWN');
+			$wattletCmd->setDisplay('icon','<i class=\"fa fa-arrow-down\"></i>');
+			$wattletCmd->save();
+					
+		}
+	}
 }
 
 class wattletCmd extends cmd {
