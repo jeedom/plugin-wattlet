@@ -75,9 +75,7 @@ class wattlet extends eqLogic {
 				$eqLogic->setConfiguration('hard',$wattcube['hard']);
 	            $eqLogic->setConfiguration('type',$wattcube['type']);
 				$eqLogic->setIsVisible(1);
-	            $eqLogic->save();
-	            $eqLogic = self::byId($eqLogic->getId());
-	            $include_device = $eqLogic->getId();				
+	            $eqLogic->save();				
 			}
 		}
 		$eqLogics = eqLogic::byType('wattlet');
@@ -94,7 +92,6 @@ class wattlet extends eqLogic {
     }
 	
 	public function postSave() {
-		sleep(1);
 		$type = $this->getConfiguration('type');		
 		if($type =="LIGHT" || $type =="OPEN"){
 			$wattletCmd = $this->getCmd(null, 'state');
