@@ -497,7 +497,7 @@ class wattlet extends eqLogic {
 			$wattletCmd = $this->getCmd(null, 'slider');
 			if (!is_object($wattletCmd)) {
 				$wattletCmd = new wattletCmd();
-				$wattletCmd->setName(__('Curseur', __FILE__));
+				$wattletCmd->setName(__('Niveau', __FILE__));
 			}
 			$wattletCmd->setEqLogic_id($this->getId());
 			$wattletCmd->setLogicalId('slider');
