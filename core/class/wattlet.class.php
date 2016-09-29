@@ -93,7 +93,54 @@ class wattlet extends eqLogic {
 	
 	public function postSave() {
 		$type = $this->getConfiguration('type');		
-		if($type =="LIGHT" || $type =="OPEN"){
+		if($type =="LIGHT"){
+			$wattletCmd = $this->getCmd(null, 'state');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Etat', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('state');
+			$wattletCmd->setConfiguration('request', 'state');
+			$wattletCmd->setType('info');
+			$wattletCmd->setSubType('binary');
+			$wattletCmd->setIsVisible(false);
+			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
+			$wattletCmd->save();
+			$stateId = $wattletCmd->getId();
+			
+			$wattletCmd = $this->getCmd(null, 'on');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('On', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('on');
+			$wattletCmd->setConfiguration('request', '01');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+			
+			$wattletCmd = $this->getCmd(null, 'off');
+			if (!is_object($wattletCmd)) {
+				$wattletCmd = new wattletCmd();
+				$wattletCmd->setName(__('Off', __FILE__));
+			}
+			$wattletCmd->setEqLogic_id($this->getId());
+			$wattletCmd->setLogicalId('off');
+			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setType('action');
+			$wattletCmd->setSubType('other');
+			$wattletCmd->setTemplate('dashboard','light');
+			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
+			$wattletCmd->setValue($stateId);
+			$wattletCmd->save();
+		}else if($type =="OPEN"){
 			$wattletCmd = $this->getCmd(null, 'state');
 			if (!is_object($wattletCmd)) {
 				$wattletCmd = new wattletCmd();
@@ -246,7 +293,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', 'state_io1');
 			$wattletCmd->setType('info');
 			$wattletCmd->setSubType('binary');
-			$wattletCmd->setIsVisible(false);
 			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			$wattletCmd->save();
 			$stateId1 = $wattletCmd->getId();
@@ -261,9 +307,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '01');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setOrder(1);
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(2);
 			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
 			$wattletCmd->setValue($stateId1);
 			$wattletCmd->save();
@@ -278,9 +322,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '00');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setOrder(2);
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(1);
 			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
 			$wattletCmd->setValue($stateId1);
 			$wattletCmd->save();
@@ -313,6 +355,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setOrder(3);
 			$wattletCmd->setTemplate('dashboard','light');
 			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('forceReturnLineBefore', 1);
 			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
 			$wattletCmd->setValue($stateId2);
 			$wattletCmd->save();
@@ -330,6 +373,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setOrder(4);
 			$wattletCmd->setTemplate('dashboard','light');
 			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setDisplay('forceReturnLineBefore', 1);
 			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
 			$wattletCmd->setValue($stateId2);
 			$wattletCmd->save();
@@ -345,7 +389,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', 'state');
 			$wattletCmd->setType('info');
 			$wattletCmd->setSubType('binary');
-			$wattletCmd->setIsVisible(false);
 			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			$wattletCmd->save();
 			$stateId = $wattletCmd->getId();
@@ -360,8 +403,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '01');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
 			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
 			$wattletCmd->setValue($stateId);
 			$wattletCmd->save();
@@ -376,8 +417,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '00');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
 			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
 			$wattletCmd->setValue($stateId);
 			$wattletCmd->save();
@@ -393,7 +432,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', 'state_io1');
 			$wattletCmd->setType('info');
 			$wattletCmd->setSubType('binary');
-			$wattletCmd->setIsVisible(false);
 			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			$wattletCmd->save();
 			$stateId1 = $wattletCmd->getId();
@@ -408,8 +446,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '01');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(2);
 			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
 			$wattletCmd->setValue($stateId1);
 			$wattletCmd->save();
@@ -424,8 +461,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '00');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(1);
 			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
 			$wattletCmd->setValue($stateId1);
 			$wattletCmd->save();
@@ -440,7 +476,6 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', 'state_io2');
 			$wattletCmd->setType('info');
 			$wattletCmd->setSubType('binary');
-			$wattletCmd->setIsVisible(false);
 			$wattletCmd->setDisplay('generic_type','LIGHT_STATE');
 			$wattletCmd->save();
 			$stateId2 = $wattletCmd->getId();
@@ -455,8 +490,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '03');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(4);
 			$wattletCmd->setDisplay('generic_type','LIGHT_ON');
 			$wattletCmd->setValue($stateId2);
 			$wattletCmd->save();
@@ -471,8 +505,7 @@ class wattlet extends eqLogic {
 			$wattletCmd->setConfiguration('request', '02');
 			$wattletCmd->setType('action');
 			$wattletCmd->setSubType('other');
-			$wattletCmd->setTemplate('dashboard','light');
-			$wattletCmd->setTemplate('mobile','light');
+			$wattletCmd->setOrder(3);
 			$wattletCmd->setDisplay('generic_type','LIGHT_OFF');
 			$wattletCmd->setValue($stateId2);
 			$wattletCmd->save();
@@ -517,7 +550,7 @@ class wattlet extends eqLogic {
 			}
 			$wattletCmd->setEqLogic_id($this->getId());
 			$wattletCmd->setLogicalId('up');
-			$wattletCmd->setConfiguration('request', '08');
+			$wattletCmd->setConfiguration('request', '00');
 			$wattletCmd->setType('action');
 			$wattletCmd->setOrder(3);
 			$wattletCmd->setSubType('other');
@@ -532,7 +565,7 @@ class wattlet extends eqLogic {
 			}
 			$wattletCmd->setEqLogic_id($this->getId());
 			$wattletCmd->setLogicalId('down');
-			$wattletCmd->setConfiguration('request', '00');
+			$wattletCmd->setConfiguration('request', '08');
 			$wattletCmd->setType('action');
 			$wattletCmd->setOrder(4);
 			$wattletCmd->setSubType('other');
@@ -541,6 +574,9 @@ class wattlet extends eqLogic {
 			$wattletCmd->save();
 					
 		}
+	}
+	public static function cron15($_eqLogic_id = null) {
+		wattlet::updateValues();
 	}
 }
 
