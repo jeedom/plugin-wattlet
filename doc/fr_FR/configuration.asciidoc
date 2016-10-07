@@ -2,17 +2,17 @@
 
 Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web.
 
-image::../images/wattlet.PNG[]
+image::../images/wattlet.png[]
 
 == Configuration des équipements
 
 La synchronisation des équipements Wattlets est accessible à partir du menu plugin : 
 
-image::../images/wattlet2.PNG[]
+image::../images/wattlet2.png[]
 
 Une fois que vous cliquez sur l'un d'eux, vous obtenez : 
 
-image::../images/wattlet3.PNG[]
+image::../images/wattlet3.png[]
 
 Vous retrouvez ici toute la configuration de votre équipement : 
 
@@ -38,7 +38,7 @@ Les commandes sont automatiquement créées, il n'est pas nécessaire de les raj
 Afin de récupérer les retours d'états, il est nécessaire de configurer les notifications Push dans le Wattcube Web.
 
 Dans l'interface du Wattcube Web, se rendre dans l'onglet "Préférences" puis menu "Personnalisation de la commande" 
-image::../images/wattlet4.PNG[]
+image::../images/wattlet4.png[]
 
 Dans la zone "Notification PUSH", entrer l'adresse de la Jeedom sous la forme :
 
@@ -46,4 +46,4 @@ Dans la zone "Notification PUSH", entrer l'adresse de la Jeedom sous la forme :
 
 puis enregistrer.
 
-image::../images/wattlet5.PNG[]
+image::../images/wattlet5.png[]
