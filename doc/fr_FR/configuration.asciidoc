@@ -6,7 +6,7 @@ image::../images/wattlet.png[]
 
 == Configuration des équipements
 
-La synchronisation des équipements Wattlets est accessible à partir du menu plugin : 
+La synchronisation des équipements Wattlets est accessible à partir du menu Plugins : 
 
 image::../images/wattlet2.png[]
 
