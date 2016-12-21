@@ -628,8 +628,8 @@ class wattletCmd extends cmd {
 						 }
 					}
 				}
-			}elseif($wattlet->getConfiguration('TYPE') == "WIN" && $this->getSubType() == "slider"){
-				$request = $_options['slider'];
+			}elseif($wattlet->getConfiguration('type') == "WIN" && $this->getSubType() == "slider"){
+				$request = $_options['slider']['slider'];
 			}else{
 				$request = $this->getConfiguration('request');
 			}
