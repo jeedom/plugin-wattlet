@@ -1,10 +1,10 @@
-== Configuration du plugin
+== Plugin Konfiguration
 
 Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web.
 
 image::../images/wattlet.png[]
 
-== Configuration des équipements
+== Geräte Konfiguration
 
 La synchronisation des équipements Wattlets est accessible à partir du menu Plugins : 
 
