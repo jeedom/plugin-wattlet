@@ -1,10 +1,10 @@
-== Configuration du plugin
+== Plugin Konfiguration
 
 Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web.
 
 image::../images/wattlet.png[]
 
-== Configuration des équipements
+== Geräte Konfiguration
 
 La synchronisation des équipements Wattlets est accessible à partir du menu Plugins : 
 
@@ -14,7 +14,7 @@ Une fois que vous cliquez sur l'un d'eux, vous obtenez :
 
 image::../images/wattlet3.png[]
 
-Vous retrouvez ici toute la configuration de votre équipement : 
+Hier finden sie die ganze Konfiguration Ihrer Geräte: 
 
 * *Nom de l'équipement Wattlet* : nom de votre équipement Wattlet sur le dashboard,
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement,
@@ -33,7 +33,7 @@ Ainsi que les informations suivantes :
 [NOTE]
 Les commandes sont automatiquement créées, il n'est pas nécessaire de les rajouter manuellement.
 
-== Configuration du Wattcube Web
+== Wattcube Konfiguration
 
 Afin de récupérer les retours d'états, il est nécessaire de configurer les notifications Push dans le Wattcube Web.
 
