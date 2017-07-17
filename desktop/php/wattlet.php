@@ -107,8 +107,8 @@ sendVarToJS('eqType', 'wattlet');
 		                <div class="form-group">
 					        <label class="col-sm-2 control-label"></label>
 					        <div class="col-sm-6">
-					          <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>
-					          <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
+					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>{{Activer}}
+					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>{{Visible}}
 					        </div>
 				      </div>
 		                
