@@ -1,11 +1,11 @@
 {
-	"id" : "denonavr",
-	"name" : "Denon",
-	"description" : "Plugin permettant de piloter les amplificateurs Denon",
+	"id" : "wattlet",
+	"name" : "Wattlet",
+	"description" : "Plugin Wattlet",
 	"licence" : "AGPL",
-	"author" : "Loïc",
+	"author" : "Thomas Martinez",
 	"require" : "3.0",
-	"category" : "multimedia",
-	"changelog" : "https://github.com/jeedom/plugin-denonavr/blob/stable/doc/#language#/changelog.asciidoc",
-	"documentation" : "https://github.com/jeedom/plugin-denonavr/blob/stable/doc/#language#/index.asciidoc"
+	"category" : "automation protocol",
+	"changelog" : "https://github.com/jeedom/plugin-wattlet/blob/stable/doc/#language#/changelog.asciidoc",
+	"documentation" : "https://github.com/jeedom/plugin-wattlet/blob/stable/doc/#language#/index.asciidoc"
 }
