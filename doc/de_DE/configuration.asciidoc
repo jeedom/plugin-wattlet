@@ -10,19 +10,19 @@ La synchronisation des équipements Wattlets est accessible à partir du menu Pl
 
 image::../images/wattlet2.png[]
 
-Une fois que vous cliquez sur l'un d'eux, vous obtenez : 
+Sobald Sie eines davon anklicken, erhalten Sie : 
 
 image::../images/wattlet3.png[]
 
 Hier finden sie die ganze Konfiguration Ihrer Geräte: 
 
 * *Nom de l'équipement Wattlet* : nom de votre équipement Wattlet sur le dashboard,
-* *Objet parent* : indique l'objet parent auquel appartient l'équipement,
-* *Activer* : permet de rendre votre équipement actif,
-* *Visible* : rend votre équipement visible sur le dashboard,
-* *Catégorie* : catégorie de votre équipement Wattlet
+* *Eltern-Objekt* : giebt an welchem Eltern Objekt das Gerät angehört,
+* *aktivieren* : erlaubt, Ihr Gerät aktiv zu machen,
+* *Sichtbar* : macht Ihr Gerät auf dem Armaturenbrett sichtbar,
+* *Kategorie* : Kategorie Ihrer Wattlet Geräte
  
-Ainsi que les informations suivantes :
+Wie die folgenden Informationen :
 
 * *Adresse* : Adresse du module,
 * *Type* : Type de module Wattlet,
@@ -31,7 +31,7 @@ Ainsi que les informations suivantes :
 
 
 [NOTE]
-Les commandes sont automatiquement créées, il n'est pas nécessaire de les rajouter manuellement.
+Befehle werden automatisch erstellt, es ist nicht notwendig, sie manuell hinzuzufügen. 
 
 == Wattcube Konfiguration
 

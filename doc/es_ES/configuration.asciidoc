@@ -1,10 +1,10 @@
-== Configuration du plugin
+== Configuración del plugin
 
 Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web.
 
 image::../images/wattlet.png[]
 
-== Configuration des équipements
+== Configuración de dispositivos
 
 La synchronisation des équipements Wattlets est accessible à partir du menu Plugins : 
 
@@ -14,12 +14,12 @@ Une fois que vous cliquez sur l'un d'eux, vous obtenez :
 
 image::../images/wattlet3.png[]
 
-Vous retrouvez ici toute la configuration de votre équipement : 
+Aquí encontrará toda la configuración de su dispositivo: 
 
 * *Nom de l'équipement Wattlet* : nom de votre équipement Wattlet sur le dashboard,
-* *Objet parent* : indique l'objet parent auquel appartient l'équipement,
-* *Activer* : permet de rendre votre équipement actif,
-* *Visible* : rend votre équipement visible sur le dashboard,
+* *Objeto primario* : indica el objeto primario que pertenece al equipo.
+* *Activar* : permite activar el dispositivo.
+* *Visible* : hace visible el dispositivo en el Dashboard.
 * *Catégorie* : catégorie de votre équipement Wattlet
  
 Ainsi que les informations suivantes :
@@ -30,7 +30,7 @@ Ainsi que les informations suivantes :
 * *Version Hardware* : Version du matériel
 
 
-[NOTE]
+[NOTA]
 Les commandes sont automatiquement créées, il n'est pas nécessaire de les rajouter manuellement.
 
 == Configuration du Wattcube Web
