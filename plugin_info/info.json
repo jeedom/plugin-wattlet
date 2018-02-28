@@ -5,7 +5,7 @@
 	"licence" : "AGPL",
 	"author" : "Thomas Martinez",
 	"require" : "3.0",
-        "category" : "automation protocol",
+        "category" : "automation protocol",
         "changelog" : "https://jeedom.github.io/plugin-wattlet/#language#/changelog",
         "documentation" : "https://jeedom.github.io/plugin-wattlet/#language#/"
 }
