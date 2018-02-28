@@ -1,5 +1,0 @@
-= WATTLET
-
-Ce plugin permet de piloter les modules Wattcubes de Wattlet via le Wattcube Web.
-
-include::configuration.asciidoc[]
