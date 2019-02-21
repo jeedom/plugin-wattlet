@@ -17,7 +17,7 @@ menu Plugins :
 
 ![wattlet2](../images/wattlet2.png)
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Once you click on one of them, you get:
 
 ![wattlet3](../images/wattlet3.png)
 
