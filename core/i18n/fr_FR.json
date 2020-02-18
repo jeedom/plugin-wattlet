@@ -1,0 +1,80 @@
+{
+    "plugin_info\/configuration.php": {
+        "Adresse IP du Wattcube Web": "Adresse IP du Wattcube Web"
+    },
+    "desktop\/modal\/health.php": {
+        "Image": "Image",
+        "Module": "Module",
+        "ID": "ID",
+        "Statut": "Statut",
+        "Adresse": "Adresse",
+        "Type": "Type",
+        "Version logicielle": "Version logicielle",
+        "Version matérielle": "Version matérielle",
+        "Date création": "Date création",
+        "OK": "OK",
+        "NOK": "NOK"
+    },
+    "desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "Santé Wattlet",
+        "Historiser": "Historiser",
+        "Afficher": "Afficher",
+        "Inverser": "Inverser",
+        "Tester": "Tester"
+    },
+    "desktop\/php\/wattlet.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Rechercher": "Rechercher",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
+        "Santé": "Santé",
+        "Synchroniser": "Synchroniser",
+        "Mes Wattcubes": "Mes Wattcubes",
+        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer",
+        "Général": "Général",
+        "Nom de l'équipement wattlet": "Nom de l'équipement wattlet",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Informations": "Informations",
+        "Adresse": "Adresse",
+        "Type": "Type",
+        "IO": "IO",
+        "Direction": "Direction",
+        "Version Software": "Version Software",
+        "Version Hardware": "Version Hardware",
+        " Ajouter une commande": " Ajouter une commande",
+        "Nom": "Nom",
+        "Parametre(s)": "Parametre(s)",
+        "Options": "Options",
+        "Supprimer": "Supprimer",
+        "Sauvegarder": "Sauvegarder"
+    },
+    "core\/ajax\/wattlet.ajax.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+    },
+    "core\/class\/wattlet.class.php": {
+        "Etat": "Etat",
+        "On": "On",
+        "Off": "Off",
+        "Niveau": "Niveau",
+        "Monter": "Monter",
+        "Descendre": "Descendre",
+        "Etat 1": "Etat 1",
+        "On 1": "On 1",
+        "Off 1": "Off 1",
+        "Etat 2": "Etat 2",
+        "On 2": "On 2",
+        "Off 2": "Off 2",
+        "Etat Entrée": "Etat Entrée",
+        "On Entrée": "On Entrée",
+        "Off Entrée": "Off Entrée",
+        "Etat Sortie": "Etat Sortie",
+        "On Sortie": "On Sortie",
+        "Off Sortie": "Off Sortie",
+        "La requete ne peut etre vide": "La requete ne peut etre vide"
+    }
+}

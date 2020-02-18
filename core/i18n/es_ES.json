@@ -1,0 +1,80 @@
+{
+    "plugin_info\/configuration.php": {
+        "Adresse IP du Wattcube Web": "Dirección IP de Wattcube Web"
+    },
+    "desktop\/modal\/health.php": {
+        "Image": "imagen",
+        "Module": "módulo",
+        "ID": "identificación",
+        "Statut": "estatus",
+        "Adresse": "dirección",
+        "Type": "tipo",
+        "Version logicielle": "Versión de software",
+        "Version matérielle": "Versión de hardware",
+        "Date création": "Fecha de creación",
+        "OK": "bueno",
+        "NOK": "NOK"
+    },
+    "desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "Wattlet Health",
+        "Historiser": "historizar",
+        "Afficher": "visualización",
+        "Inverser": "marcha atrás",
+        "Tester": "prueba"
+    },
+    "desktop\/php\/wattlet.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Rechercher": "Buscar",
+        "Gestion": "administración",
+        "Configuration": "configuración",
+        "Santé": "salud",
+        "Synchroniser": "Sincronizar",
+        "Mes Wattcubes": "My Wattcubes",
+        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "Aún no tiene un wattcube, haga clic en Sincronizar para comenzar",
+        "Général": "general",
+        "Nom de l'équipement wattlet": "Nombre del equipo de wattlet.",
+        "Objet parent": "Objeto padre",
+        "Aucun": "no",
+        "Catégorie": "categoría",
+        "Activer": "Activar",
+        "Visible": "visible",
+        "Informations": "información",
+        "Adresse": "dirección",
+        "Type": "tipo",
+        "IO": "IO",
+        "Direction": "dirección",
+        "Version Software": "Versión de software",
+        "Version Hardware": "Versión de hardware",
+        " Ajouter une commande": "Agregar un pedido",
+        "Nom": "apellido",
+        "Parametre(s)": "Configuraciones)",
+        "Options": "opciones",
+        "Supprimer": "remove",
+        "Sauvegarder": "Guardar"
+    },
+    "core\/ajax\/wattlet.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Aucune methode correspondante à : ": "Ningún método correspondiente a:"
+    },
+    "core\/class\/wattlet.class.php": {
+        "Etat": "State",
+        "On": "We",
+        "Off": "off",
+        "Niveau": "Level",
+        "Monter": "ascend",
+        "Descendre": "Go down",
+        "Etat 1": "State 1",
+        "On 1": "We 1",
+        "Off 1": "Apagado 1",
+        "Etat 2": "State 2",
+        "On 2": "We 2",
+        "Off 2": "Apagado 2",
+        "Etat Entrée": "Entry State",
+        "On Entrée": "On Entrance",
+        "Off Entrée": "Off Entry",
+        "Etat Sortie": "Exit State",
+        "On Sortie": "On Exit",
+        "Off Sortie": "Off Exit",
+        "La requete ne peut etre vide": "The request cannot be empty"
+    }
+}
