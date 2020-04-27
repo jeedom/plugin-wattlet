@@ -1,8 +1,8 @@
 {
-    "plugin_info\/configuration.php": {
+    "plugins\/wattlet\/plugin_info\/configuration.php": {
         "Adresse IP du Wattcube Web": "Adresse IP du Wattcube Web"
     },
-    "desktop\/modal\/health.php": {
+    "plugins\/wattlet\/desktop\/modal\/health.php": {
         "Image": "Image",
         "Module": "Module",
         "ID": "ID",
@@ -15,14 +15,7 @@
         "OK": "OK",
         "NOK": "NOK"
     },
-    "desktop\/js\/wattlet.js": {
-        "Santé Wattlet": "Santé Wattlet",
-        "Historiser": "Historiser",
-        "Afficher": "Afficher",
-        "Inverser": "Inverser",
-        "Tester": "Tester"
-    },
-    "desktop\/php\/wattlet.php": {
+    "plugins\/wattlet\/desktop\/php\/wattlet.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Rechercher": "Rechercher",
         "Gestion": "Gestion",
@@ -52,11 +45,18 @@
         "Supprimer": "Supprimer",
         "Sauvegarder": "Sauvegarder"
     },
-    "core\/ajax\/wattlet.ajax.php": {
+    "plugins\/wattlet\/desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "Santé Wattlet",
+        "Historiser": "Historiser",
+        "Afficher": "Afficher",
+        "Inverser": "Inverser",
+        "Tester": "Tester"
+    },
+    "plugins\/wattlet\/core\/ajax\/wattlet.ajax.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
     },
-    "core\/class\/wattlet.class.php": {
+    "plugins\/wattlet\/core\/class\/wattlet.class.php": {
         "Etat": "Etat",
         "On": "On",
         "Off": "Off",

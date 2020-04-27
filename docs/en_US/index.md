@@ -1,71 +1,71 @@
-Ce plugin permet de piloter les modules Wattcubes de Wattlet via le
-Wattcube Web.
 
-Plugin configuration
+.
+
+Plugin configuration 
 =======================
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-puis de configurer l’adresse IP du Wattcube Web.
+After downloading the plugin, you just need to activate it,
+.
 
-![wattlet](../images/wattlet.png)
+![wattlet](../Pictures/wattlet.png)
 
-Equipment configuration
+Equipment configuration 
 =============================
 
-La synchronisation des équipements Wattlets est accessible à partir du
-menu Plugins :
 
-![wattlet2](../images/wattlet2.png)
+Plugins menu :
 
-Once you click on one of them, you get:
+![wattlet2](../Pictures/wattlet2.png)
 
-![wattlet3](../images/wattlet3.png)
+Once you click on one of them, you get :
 
-You can find here the full configuration of your device :
+![wattlet3](../Pictures/wattlet3.png)
 
--   **Nom de l’équipement Wattlet** : nom de votre équipement Wattlet
-    sur le dashboard,
+Here you find all the configuration of your equipment :
 
--   **Parent Object**: Specifies the parent object to which belongs
+-   **** : 
+    on Dashboard,
+
+-   **Parent object** : indicates the parent object to which belongs
     equipment,
 
--   **Enable**: to make your equipment active,
+-   **Activate** : makes your equipment active,
 
--   **Visible**: makes your equipment visible on the dashboard,
+-   **Visible** : makes your equipment visible on the dashboard,
 
--   **Catégorie** : catégorie de votre équipement Wattlet
+-   **Category** : 
 
-Ainsi que les informations suivantes :
+ :
 
--   **Adresse** : Adresse du module,
+-   **Address** : ,
 
--   **Type** : Type de module Wattlet,
+-   **Type** : ,
 
--   **Version Software** : Version du logiciel interne du module
-    Wattlet,
+-   **** : 
+    ,
 
--   **Version Hardware** : Version du matériel
+-   **** : 
 
-> **Note**
+> **NOTE**
 >
-> Les commandes sont automatiquement créées, il n’est pas nécessaire de
-> les rajouter manuellement.
+> 
+> .
 
-Configuration du Wattcube Web 
+ 
 =============================
 
-Afin de récupérer les retours d’états, il est nécessaire de configurer
-les notifications Push dans le Wattcube Web.
 
-Dans l’interface du Wattcube Web, se rendre dans l’onglet "Préférences"
-puis menu "Personnalisation de la commande"
-image::../images/wattlet4.png\[\]
+.
 
-Dans la zone "Notification PUSH", entrer l’adresse de la Jeedom sous la
-forme :
+"
+"
+Picture::..]
 
-**IP\_JEEDOM/plugins/wattlet/core/php/jeeWattlet.php?id=~id~&cmd=~cmd~&state=~state~**
 
-puis enregistrer.
+ :
 
-![wattlet5](../images/wattlet5.png)
+**?**
+
+.
+
+![wattlet5](../Pictures/wattlet5.png)

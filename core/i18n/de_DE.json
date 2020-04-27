@@ -1,80 +1,80 @@
 {
-    "plugin_info\/configuration.php": {
-        "Adresse IP du Wattcube Web": "Wattcube Web IP-Adresse"
+    "plugins\/wattlet\/plugin_info\/configuration.php": {
+        "Adresse IP du Wattcube Web": ""
     },
-    "desktop\/modal\/health.php": {
+    "plugins\/wattlet\/desktop\/modal\/health.php": {
         "Image": "Bild",
         "Module": "Modul",
         "ID": "Identifikation",
         "Statut": "Status",
         "Adresse": "Adresse",
         "Type": "Typ",
-        "Version logicielle": "Softwareversion",
-        "Version matérielle": "Hardwareversion",
+        "Version logicielle": "",
+        "Version matérielle": "",
         "Date création": "Erstellungsdatum",
-        "OK": "Ok",
-        "NOK": "NOK"
+        "OK": "OK",
+        "NOK": ""
     },
-    "desktop\/js\/wattlet.js": {
-        "Santé Wattlet": "Wattlet Gesundheit",
-        "Historiser": "historisieren",
-        "Afficher": "Anzeige",
-        "Inverser": "umkehren",
-        "Tester": "Test"
-    },
-    "desktop\/php\/wattlet.php": {
+    "plugins\/wattlet\/desktop\/php\/wattlet.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
-        "Rechercher": "Suche",
-        "Gestion": "Management",
+        "Rechercher": "Suchen nach",
+        "Gestion": "Verwaltung",
         "Configuration": "Konfiguration",
         "Santé": "Gesundheit",
-        "Synchroniser": "synchronize",
-        "Mes Wattcubes": "Meine Wattcubes",
-        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "Sie haben noch keinen Wattcube. Klicken Sie zum Starten auf Synchronisieren",
-        "Général": "General",
-        "Nom de l'équipement wattlet": "Name der Wattlet-Ausrüstung",
+        "Synchroniser": "Synchronize",
+        "Mes Wattcubes": "",
+        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "",
+        "Général": "Allgemein",
+        "Nom de l'équipement wattlet": "",
         "Objet parent": "Übergeordnetes Objekt",
-        "Aucun": "keine",
+        "Aucun": "Ohne",
         "Catégorie": "Kategorie",
-        "Activer": "activate",
-        "Visible": "sichtbar",
-        "Informations": "Informationen",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
+        "Informations": "Information",
         "Adresse": "Adresse",
         "Type": "Typ",
-        "IO": "IO",
-        "Direction": "Richtung",
-        "Version Software": "Softwareversion",
-        "Version Hardware": "Hardwareversion",
-        " Ajouter une commande": "Bestellung hinzufügen",
+        "IO": "",
+        "Direction": "",
+        "Version Software": "",
+        "Version Hardware": "",
+        " Ajouter une commande": "",
         "Nom": "Name",
-        "Parametre(s)": "Parameter (n)",
+        "Parametre(s)": "",
         "Options": "Optionen",
-        "Supprimer": "Entfernen",
-        "Sauvegarder": "speichern"
+        "Supprimer": "Löschen",
+        "Sauvegarder": "Speichern"
     },
-    "core\/ajax\/wattlet.ajax.php": {
+    "plugins\/wattlet\/desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "",
+        "Historiser": "Chronik",
+        "Afficher": "Anzeige",
+        "Inverser": "Umgekehrt",
+        "Tester": "Test"
+    },
+    "plugins\/wattlet\/core\/ajax\/wattlet.ajax.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
         "Aucune methode correspondante à : ": "Keine Methode entsprechend:"
     },
-    "core\/class\/wattlet.class.php": {
-        "Etat": "State",
-        "On": "We",
-        "Off": "off",
-        "Niveau": "Level",
-        "Monter": "ascend",
-        "Descendre": "Go down",
-        "Etat 1": "State 1",
-        "On 1": "We 1",
-        "Off 1": "Apagado 1",
-        "Etat 2": "State 2",
-        "On 2": "We 2",
-        "Off 2": "Apagado 2",
-        "Etat Entrée": "Entry State",
-        "On Entrée": "On Entrance",
-        "Off Entrée": "Off Entry",
-        "Etat Sortie": "Exit State",
-        "On Sortie": "On Exit",
-        "Off Sortie": "Off Exit",
-        "La requete ne peut etre vide": "The request cannot be empty"
+    "plugins\/wattlet\/core\/class\/wattlet.class.php": {
+        "Etat": "Zustand",
+        "On": "Ein",
+        "Off": "Aus",
+        "Niveau": "Ebene",
+        "Monter": "",
+        "Descendre": "",
+        "Etat 1": "",
+        "On 1": "",
+        "Off 1": "",
+        "Etat 2": "",
+        "On 2": "",
+        "Off 2": "",
+        "Etat Entrée": "",
+        "On Entrée": "",
+        "Off Entrée": "",
+        "Etat Sortie": "",
+        "On Sortie": "",
+        "Off Sortie": "",
+        "La requete ne peut etre vide": "Die Anfrage darf nicht leer sein"
     }
 }
