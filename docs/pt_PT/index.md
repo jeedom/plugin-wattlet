@@ -29,24 +29,24 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Objeto pai** : indica o objeto pai ao qual pertence
     o equipamento,
 
--   **Activer** : torna seu equipamento ativo,
+-   **Ativar** : torna seu equipamento ativo,
 
--   **Visible** : torna seu equipamento visível no painel,
+-   **Visivél** : torna seu equipamento visível no painel,
 
 -   **Categoria** : categoria do seu equipamento Wattlet
 
 Bem como as seguintes informações :
 
--   **Adresse** : Endereço do módulo,
+-   **Morada** : Endereço do módulo,
 
--   **Type** : Tipo de módulo Wattlet,
+-   **Tipo** : Tipo de módulo Wattlet,
 
 -   **Versão do software** : Versão interna do software do módulo
     Wattlet,
 
 -   **Versão de hardware** : Versão de hardware
 
-> **Note**
+> **NOTA**
 >
 > Os pedidos são criados automaticamente, não há necessidade de
 > adicione-os manualmente.

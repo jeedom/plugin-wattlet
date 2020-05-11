@@ -25,7 +25,7 @@
         "Mes Wattcubes": "My Wattcubes",
         "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "Aún no tiene un wattcube, haga clic en Sincronizar para comenzar",
         "Général": "Principal",
-        "Nom de l'équipement wattlet": "Nombre del equipo de wattlet.",
+        "Nom de l'équipement wattlet": "Nombre del equipo de wattlet",
         "Objet parent": "Objeto padre",
         "Aucun": "Ninguna",
         "Catégorie": "Categoría",
@@ -75,6 +75,6 @@
         "Etat Sortie": "Estado de salida",
         "On Sortie": "Al salir",
         "Off Sortie": "Salir",
-        "La requete ne peut etre vide": "La solicitud no puede estar vacía."
+        "La requete ne peut etre vide": "La solicitud no puede estar vacía"
     }
 }

@@ -29,9 +29,9 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Übergeordnetes Objekt** : gibt das übergeordnete Objekt an, zu dem es gehört
     Ausrüstung,
 
--   **Activer** : macht Ihre Ausrüstung aktiv,
+-   **Aktivieren** : macht Ihre Ausrüstung aktiv,
 
--   **Visible** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar,
+-   **Sichtbar** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar,
 
 -   **Kategorie** : Kategorie Ihrer Wattlet-Ausrüstung
 
@@ -39,14 +39,14 @@ Sowie die folgenden Informationen :
 
 -   **Adresse** : Moduladresse,
 
--   **Type** : Wattlet-Modultyp,
+-   **Typ** : Wattlet-Modultyp,
 
 -   **Softwareversion** : Modulinterne Softwareversion
     Wattlet,
 
 -   **Hardwareversion** : Hardwareversion
 
-> **Note**
+> **Notiz**
 >
 > Bestellungen werden automatisch erstellt, das ist nicht nötig
 > Fügen Sie sie manuell hinzu.

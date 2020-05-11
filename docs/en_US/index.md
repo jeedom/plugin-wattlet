@@ -29,7 +29,7 @@ Here you find all the configuration of your equipment :
 -   **Parent object** : indicates the parent object to which belongs
     equipment,
 
--   **Activer** : makes your equipment active,
+-   **Activate** : makes your equipment active,
 
 -   **Visible** : makes your equipment visible on the dashboard,
 
@@ -37,7 +37,7 @@ Here you find all the configuration of your equipment :
 
 As well as the following information :
 
--   **Adresse** : Module address,
+-   **Address** : Module address,
 
 -   **Type** : Wattlet module type,
 
@@ -46,7 +46,7 @@ As well as the following information :
 
 -   **Hardware version** : Hardware version
 
-> **Note**
+> **NOTE**
 >
 > Orders are automatically created, there is no need to
 > add them manually.

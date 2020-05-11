@@ -23,13 +23,13 @@ Una vez que haces clic en uno de ellos, obtienes :
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nombre del equipo de wattlet.** : nombre de su equipo Wattlet
+-   **Nombre del equipo de wattlet** : nombre de su equipo Wattlet
     en el tablero,
 
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo,
 
--   **Activer** : activa su equipo,
+-   **Activar** : activa su equipo,
 
 -   **Visible** : hace que su equipo sea visible en el tablero,
 
@@ -37,16 +37,16 @@ Aquí encontrarás toda la configuración de tu equipo :
 
 Así como la siguiente información :
 
--   **Adresse** : Dirección del módulo,
+-   **Dirección** : Dirección del módulo,
 
--   **Type** : Tipo de módulo Wattlet,
+-   **Tipo** : Tipo de módulo Wattlet,
 
 -   **Versión de software** : Versión de software interno del módulo
     Wattlet,
 
 -   **Versión de hardware** : Versión de hardware
 
-> **Note**
+> **Nota**
 >
 > Los pedidos se crean automáticamente, no hay necesidad de
 > agregarlos manualmente.

@@ -54,7 +54,7 @@
     },
     "plugins\/wattlet\/core\/ajax\/wattlet.ajax.php": {
         "401 - Accès non autorisé": "401 - Несанкционированный доступ",
-        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/wattlet\/core\/class\/wattlet.class.php": {
         "Etat": "состояние",
