@@ -1,0 +1,80 @@
+{
+    "plugins\/wattlet\/plugin_info\/configuration.php": {
+        "Adresse IP du Wattcube Web": "Dirección IP de Wattcube Web"
+    },
+    "plugins\/wattlet\/desktop\/modal\/health.php": {
+        "Image": "Imagen",
+        "Module": "Modulo",
+        "ID": "Identificación",
+        "Statut": "Estado",
+        "Adresse": "Dirección",
+        "Type": "Tipo",
+        "Version logicielle": "Versión de software",
+        "Version matérielle": "Versión de hardware",
+        "Date création": "Fecha de creación",
+        "OK": "Bueno",
+        "NOK": "NOK"
+    },
+    "plugins\/wattlet\/desktop\/php\/wattlet.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Rechercher": "Buscar",
+        "Gestion": "Gestión",
+        "Configuration": "Configuración",
+        "Santé": "Salud",
+        "Synchroniser": "Sincronizar",
+        "Mes Wattcubes": "My Wattcubes",
+        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "Aún no tiene un wattcube, haga clic en Sincronizar para comenzar",
+        "Général": "Principal",
+        "Nom de l'équipement wattlet": "Nombre del equipo de wattlet",
+        "Objet parent": "Objeto padre",
+        "Aucun": "Ninguna",
+        "Catégorie": "Categoría",
+        "Activer": "Activar",
+        "Visible": "Visible",
+        "Informations": "Información",
+        "Adresse": "Dirección",
+        "Type": "Tipo",
+        "IO": "IO",
+        "Direction": "Dirección",
+        "Version Software": "Versión de software",
+        "Version Hardware": "Versión de hardware",
+        " Ajouter une commande": "Agregar un pedido",
+        "Nom": "Nombre",
+        "Parametre(s)": "Configuraciones)",
+        "Options": "Opciones",
+        "Supprimer": "Borrar",
+        "Sauvegarder": "Guardar"
+    },
+    "plugins\/wattlet\/desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "Wattlet Health",
+        "Historiser": "Guardar historial",
+        "Afficher": "Mostrar",
+        "Inverser": "Invertir",
+        "Tester": "Probar"
+    },
+    "plugins\/wattlet\/core\/ajax\/wattlet.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Aucune methode correspondante à : ": "Ningún método correspondiente a:"
+    },
+    "plugins\/wattlet\/core\/class\/wattlet.class.php": {
+        "Etat": "Estado",
+        "On": "Uno",
+        "Off": "Apagado",
+        "Niveau": "Nivel",
+        "Monter": "Subir",
+        "Descendre": "Bajar",
+        "Etat 1": "Estado 1",
+        "On 1": "Nosotros 1",
+        "Off 1": "Apagado 1",
+        "Etat 2": "Estado 2",
+        "On 2": "Nosotros 2",
+        "Off 2": "Apagado 2",
+        "Etat Entrée": "Estado de entrada",
+        "On Entrée": "En la entrada",
+        "Off Entrée": "Fuera de la entrada",
+        "Etat Sortie": "Estado de salida",
+        "On Sortie": "Al salir",
+        "Off Sortie": "Salir",
+        "La requete ne peut etre vide": "La solicitud no puede estar vacía"
+    }
+}

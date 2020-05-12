@@ -1,0 +1,80 @@
+{
+    "plugins\/wattlet\/plugin_info\/configuration.php": {
+        "Adresse IP du Wattcube Web": ""
+    },
+    "plugins\/wattlet\/desktop\/modal\/health.php": {
+        "Image": "Fotoğraf",
+        "Module": "Modul",
+        "ID": "Kimlik",
+        "Statut": "Statü",
+        "Adresse": "",
+        "Type": "Çeşit",
+        "Version logicielle": "",
+        "Version matérielle": "",
+        "Date création": "Oluşturma tarihi",
+        "OK": "Tamam",
+        "NOK": ""
+    },
+    "plugins\/wattlet\/desktop\/php\/wattlet.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Rechercher": "Arayın",
+        "Gestion": "Idare",
+        "Configuration": "Ayar",
+        "Santé": "Sağlık",
+        "Synchroniser": "Senkeronize et",
+        "Mes Wattcubes": "",
+        "Vous n'avez pas encore de wattcube, cliquez sur Synchroniser pour commencer": "",
+        "Général": "Genel",
+        "Nom de l'équipement wattlet": "",
+        "Objet parent": "Üst nesne",
+        "Aucun": "Hiçbir",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştir",
+        "Visible": "Görülebilir",
+        "Informations": "Bilgiler",
+        "Adresse": "",
+        "Type": "Çeşit",
+        "IO": "",
+        "Direction": "",
+        "Version Software": "",
+        "Version Hardware": "",
+        " Ajouter une commande": "",
+        "Nom": "İsim",
+        "Parametre(s)": "",
+        "Options": "Opsiyonlar",
+        "Supprimer": "Sil",
+        "Sauvegarder": "Kaydet"
+    },
+    "plugins\/wattlet\/desktop\/js\/wattlet.js": {
+        "Santé Wattlet": "",
+        "Historiser": "Tarihe göre sırala",
+        "Afficher": "Göster",
+        "Inverser": "Ters çevir",
+        "Tester": "Test et"
+    },
+    "plugins\/wattlet\/core\/ajax\/wattlet.ajax.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Aucune methode correspondante à : ": "Aşağıdakilere karşılık gelen bir yöntem yok:"
+    },
+    "plugins\/wattlet\/core\/class\/wattlet.class.php": {
+        "Etat": "Durum",
+        "On": "",
+        "Off": "",
+        "Niveau": "Seviye",
+        "Monter": "",
+        "Descendre": "",
+        "Etat 1": "",
+        "On 1": "",
+        "Off 1": "",
+        "Etat 2": "",
+        "On 2": "",
+        "Off 2": "",
+        "Etat Entrée": "",
+        "On Entrée": "",
+        "Off Entrée": "",
+        "Etat Sortie": "",
+        "On Sortie": "",
+        "Off Sortie": "",
+        "La requete ne peut etre vide": ""
+    }
+}
