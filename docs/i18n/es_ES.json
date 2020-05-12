@@ -1,5 +1,7 @@
 {
-    "changelog.md": null,
+    "changelog.md": {
+        "Changelog Wattlet": "Registro de cambios Wattlet"
+    },
     "index.md": {
         "Ce plugin permet de piloter les modules Wattcubes de Wattlet via le": "Este complemento le permite controlar los módulos Wattcubes de Wattlet a través de",
         "Wattcube Web": "Wattcube Web",

@@ -1,5 +1,7 @@
 {
-    "changelog.md": null,
+    "changelog.md": {
+        "Changelog Wattlet": "Changelog Wattlet"
+    },
     "index.md": {
         "Ce plugin permet de piloter les modules Wattcubes de Wattlet via le": "This plugin allows you to control Wattlet's Wattcubes modules via the",
         "Wattcube Web": "Wattcube Web",
