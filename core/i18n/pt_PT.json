@@ -76,5 +76,8 @@
         "On Sortie": "Ao sair",
         "Off Sortie": "Off Exit",
         "La requete ne peut etre vide": "A solicitação não pode estar vazia"
+    },
+    "info.json": {
+        "Ce plugin permet de piloter les modules Wattcubes de Wattlet via le Wattcube Web.": "Este plug-in permite controlar os módulos Wattcubes do Wattlet através da Web do Wattcube"
     }
 }
