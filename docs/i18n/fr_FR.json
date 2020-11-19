@@ -2,15 +2,20 @@
     "changelog.md": {
         "Changelog Wattlet": "Changelog Wattlet",
         "IMPORTANT": "IMPORTANT",
-        "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte"
+        "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte",
+        "18\/11\/2020": "18\/11\/2020",
+        "Mise à jour de l'interface V4": "Mise à jour de l'interface V4",
+        "Nouvelle présentation de la liste des objets": "Nouvelle présentation de la liste des objets",
+        "Ajout du tag compatibilité V4": "Ajout du tag compatibilité V4"
     },
     "index.md": {
         "Plugin Wattcube": "Plugin Wattcube",
         "Ce plugin permet de piloter les modules Wattcubes de Wattlet via le Wattcube Web": "Ce plugin permet de piloter les modules Wattcubes de Wattlet via le Wattcube Web",
         "Configuration du plugin": "Configuration du plugin",
-        "Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web": "Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, puis de configurer l'adresse IP du Wattcube Web",
+        "Après téléchargement du plugin, il suffit d'activer celui-ci puis de configurer l'adresse IP du Wattcube Web": "Après téléchargement du plugin, il suffit d'activer celui-ci puis de configurer l'adresse IP du Wattcube Web",
         "Configuration des équipements": "Configuration des équipements",
-        "La synchronisation des équipements Wattlets est accessible à partir du menu Plugins": "La synchronisation des équipements Wattlets est accessible à partir du menu Plugins",
+        "Plugins": "Plugins",
+        "La synchronisation des équipements Wattlets est accessible à partir du menu": "La synchronisation des équipements Wattlets est accessible à partir du menu",
         "Une fois que vous cliquez sur l'un d'eux, vous obtenez": "Une fois que vous cliquez sur l'un d'eux, vous obtenez",
         "Vous retrouvez ici toute la configuration de votre équipement": "Vous retrouvez ici toute la configuration de votre équipement",
         "Nom de l'équipement Wattlet": "Nom de l'équipement Wattlet",
@@ -32,14 +37,12 @@
         "Version du logiciel interne du module Wattlet": "Version du logiciel interne du module Wattlet",
         "Version Hardware": "Version Hardware",
         "Version du matériel": "Version du matériel",
-        "Note": "Note",
-        "Les commandes sont automatiquement créées, il n'est pas nécessaire de les rajouter manuellement": "Les commandes sont automatiquement créées, il n'est pas nécessaire de les rajouter manuellement",
+        "NOTE": "NOTE",
+        "Les commandes sont automatiquement créées, il n'est pas nécessaire de les ajouter manuellement": "Les commandes sont automatiquement créées, il n'est pas nécessaire de les ajouter manuellement",
         "Configuration du Wattcube Web": "Configuration du Wattcube Web",
         "Afin de récupérer les retours d'états, il est nécessaire de configurer les notifications Push dans le Wattcube Web": "Afin de récupérer les retours d'états, il est nécessaire de configurer les notifications Push dans le Wattcube Web",
         "Dans l'interface du Wattcube Web, se rendre dans l'onglet \"Préférences\" puis menu \"Personnalisation de la commande": "Dans l'interface du Wattcube Web, se rendre dans l'onglet \"Préférences\" puis menu \"Personnalisation de la commande",
         "Dans la zone \"Notification PUSH\", entrer l'adresse de la Jeedom sous la forme": "Dans la zone \"Notification PUSH\", entrer l'adresse de la Jeedom sous la forme",
-        "IP\\_JEEDOM\/plugins\/wattlet\/core\/php\/jeeWattlet.php": "IP\\_JEEDOM\/plugins\/wattlet\/core\/php\/jeeWattlet.php",
-        "id=~id~&cmd=~cmd~&state=~state~": "id=~id~&cmd=~cmd~&state=~state~",
         "puis enregistrer": "puis enregistrer"
     }
 }
