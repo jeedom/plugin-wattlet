@@ -9,3 +9,4 @@
 - Update der V4-Schnittstelle
 - Neue Darstellung der Objektliste
 - Hinzufügen des V4-Kompatibilitäts-Tags
+- Plugin-Symbol aktualisieren

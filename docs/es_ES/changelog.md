@@ -9,3 +9,4 @@
 - Actualización de la interfaz V4
 - Nueva presentación de la lista de objetos
 - Adición de la etiqueta de compatibilidad V4
+- Actualizar el icono del complemento
